@@ -7,7 +7,7 @@
 
 <html>
     <head>
-        <title>Recettes</title>
+        <title>Liste de toutes les recettes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -17,7 +17,7 @@
             include 'menu.html';
         ?>
         
-        <div>
+        <div width="400">
             
             <?php
                 foreach ($Recettes as $r) {
@@ -25,15 +25,23 @@
                     $img = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $titre);
                     $img = str_replace(' ', '_', $img);
                     $img = $img.'.jpg';
+                    $listeIngredients = explode("|", $r['ingredients']);
+                    $prepa = explode(". ",$r['preparation']);
             ?>
             
             <h1><?php echo $titre;?></h1>
             
-            <img src='Photos/<?php echo $img;?>' alt="Pas d'image <?php echo $img;?>">
+            <img src='Photos/<?php echo $img;?>' alt="Pas d'image" widht="100" height="100">
             
-            <p>Ingrédients: <?php echo $r['ingredients'];?></p>
+            <p>Ingrédients: <?php echo '<br/>';foreach($listeIngredients as $li){
+                echo $li.'<br/>';
+            }
+                ;?></p>
             
-            <p>Préparation: <?php echo $r['preparation'];?></p>
+            <p>Préparation: <?php echo '<br/>';foreach($prepa as $p){
+                echo $p."".'<br/>';
+            };?></p>
+            
             
             <?php
                 }
