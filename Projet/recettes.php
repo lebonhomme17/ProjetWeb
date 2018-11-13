@@ -2,6 +2,8 @@
 <?php
     include 'Donnees.inc.php';
     
+    $aliment = $_GET['aliment'];
+    
 ?>
 
 <html>
@@ -20,12 +22,13 @@
             
             <?php
                 foreach ($Recettes as $r) {
-                    $titre = $r['titre'];
-                    $img = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $titre);
-                    $img = str_replace(' ', '_', $img);
-                    $img = $img.'.jpg';
-                    $listeIngredients = explode("|", $r['ingredients']);
-                    $prepa = explode(". ",$r['preparation']);
+                    if(in_array($aliment, $r['index']) || strcmp($aliment, '')==0){
+                        $titre = $r['titre'];
+                        $img = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $titre);
+                        $img = str_replace(' ', '_', $img);
+                        $img = $img.'.jpg';
+                        $listeIngredients = explode("|", $r['ingredients']);
+                        $prepa = explode(". ",$r['preparation']);
             ?>
             
             <h1><?php echo $titre;?></h1>
@@ -43,6 +46,7 @@
             
             
             <?php
+                    }
                 }
             ?>
             
