@@ -11,6 +11,25 @@
         <title>Liste de toutes les recettes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            
+            .recette
+            {
+                width: 700px;
+                margin : auto;
+                border: 2px solid lightblue;
+                margin-top: 50px;
+                padding: 0px 10px 0px 10px;
+                background-color: lightgray;
+            }
+            
+            .recette h1
+            {
+                text-align: center;
+                color : darkblue;
+            }
+            
+        </style>
     </head>
     <body>
         
@@ -18,7 +37,7 @@
             include 'menu.html';
         ?>
         
-        <div width="400">
+        <div>
             
             <?php
                 foreach ($Recettes as $r) {
@@ -30,7 +49,7 @@
                         $listeIngredients = explode("|", $r['ingredients']);
                         $prepa = explode(". ",$r['preparation']);
             ?>
-            
+            <div class="recette">
             <h1><?php echo $titre;?></h1>
             
             <img src='Photos/<?php echo $img;?>' alt="Pas d'image" widht="100" height="100">
@@ -44,7 +63,7 @@
                 echo $p."".'<br/>';
             };?></p>
             
-            
+            </div>
             <?php
                     }
                 }
