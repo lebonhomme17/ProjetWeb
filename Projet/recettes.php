@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-
     include 'Donnees.inc.php';
     
 ?>
