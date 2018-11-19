@@ -1,0 +1,79 @@
+body{
+	background-color : #112;
+	margin: 0px 0px 0px 0px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+div{
+	background-color: #222;
+	color: #FFF;
+	width: 600px;
+	margin: auto;
+	margin-top : 50px;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #106;
+}
+
+table{
+	width: 600px;
+	margin: auto;
+	margin-top : 50px;
+	background-color: #DDF;
+}
+
+table thead th{
+	background-color: #F00;
+}
+
+
+
+#haut{
+	background-image: url('game-over.jpg');
+	background-repeat: no-repeat;
+	height: 270px;
+	width: 600px;
+	margin: auto;
+	color: #FFF;
+}
+
+#haut a{
+	color: #A00;
+	text-decoration: none;
+	font-size: 20;
+}
+
+#menu{
+	margin-top: 10px;
+	text-align: center;
+
+}
+
+#menu a{
+	color: #FFF;
+	background-color: #55A;
+	text-decoration: none;
+	margin: 10px 0px 10px 0px;
+	padding: 5px 5px 5px 5px;
+	border-collapse: collapse;
+}
+
+#menu a:hover{
+	background-color: #000;
+}
+
+#nav_astuce{
+	width: 600px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#nav_astuce a{
+	color: #FFF;
+	margin: 0 10 0 10;
+}
+
+#nav_astuce a:hover{
+	color: #5FA;
+}
