@@ -2,20 +2,27 @@
 <?php
 
     include 'Donnees.inc.php';
+
+    $aliment='';
+    if(!empty($_GET['aliment'])){
+        $aliment = $_GET['aliment'];
+    }
     
     function list_aliment($aliment, $h){
-        if(count($h[$aliment]['sous-categorie']>0)){
-            echo '<div class="sous" id=\''.$aliment.'\' style="display : none;" >';
-            foreach ($h[$aliment]['sous-categorie'] as $a){
-                if(count($h[$a]['sous-categorie'])>0){
-                    echo '<a class="categorie" onclick=\'afficherSous("'.$a.'");\'>'.$a.'</a><br/>';
-                    list_aliment($a, $h);
+        if(is_array($h[$aliment]['sous-categorie'])){
+            if(count($h[$aliment]['sous-categorie'])>0){
+                echo '<div class="sous" id=\''.$aliment.'\' style="display : none;" >';
+                foreach ($h[$aliment]['sous-categorie'] as $a){
+                    if(!empty($h[$a]['sous-categorie']) && count($h[$a]['sous-categorie'])>0){
+                        echo '<a class="categorie" onclick=\'afficherSous("'.$a.'");\'>'.$a.'</a><br/>';
+                        list_aliment($a, $h);
+                    }
+                    else{
+                        echo '<a class="aliment" href="aliments.php?aliment='.$a.'">'.$a.'</a><br/>';
+                    }
                 }
-                else{
-                    echo '<a class="aliment" href="recettes.php?aliment='.$a.'">'.$a.'</a><br/>';
-                }
+                echo '</div>';
             }
-            echo '</div>';
         }
     }
     
@@ -25,27 +32,9 @@
     <head>
         <title>Aliments</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style type="text/css">
-            
-            .sous
-            {
-                //display: none;
-                margin-left: 50px;
-            }
-            
-            .categorie
-            {
-                color : blue;
-            }
-            
-            .aliment
-            {
-                color : red;
-            }
-        </style>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+		
         <script type="text/javascript">
             
             function afficherSous(aliment){
@@ -66,7 +55,7 @@
             include 'menu.html';
         ?>
         
-        <div>
+        <div id="list-aliment">
             <a onclick="afficherSous('Aliment');">Aliments</a>
             <?php
             
@@ -74,6 +63,12 @@
             
             ?>
             
+        </div>
+
+        <div id="recette">
+            <?php
+            include 'recettes.php';
+            ?>
         </div>
         
     </body>

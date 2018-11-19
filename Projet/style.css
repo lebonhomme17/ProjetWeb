@@ -1,0 +1,96 @@
+			body
+			{
+			background-color : #F8F884;
+			}
+            .header
+            {
+                margin : auto;
+                margin-top: 5px;
+                padding: 0px 10px 0px 10px;
+				background-color : #F8F85D;
+            }  
+			.titre
+			{
+				margin-left : 5px;
+				margin-top : 5px;
+				color : black;
+				font : 25px bold;
+			}
+			.barre_recherche
+			{
+				margin-left : 150px;
+				margin-top: 5px;
+			}
+			.liste_recettes
+			{
+				width : 120px;
+				margin-left : 100px;
+				color : yellow;
+				text-align : center;
+				background-color : #F8F884;
+			}
+			.liste_aliments
+			{
+				width : 120px;
+				margin-left : 100px;
+				color : yellow;
+				text-align : center;
+				background-color : #F8F884;			
+			}
+			.connexion
+			{
+				width : 75px;
+				margin-left : 100px;
+				color : yellow;
+				text-align : center;
+				background-color : #F8F884;				
+			}
+			.textfield
+			{
+				width : 500px;
+			}
+			.recette
+            {
+                width: 700px;
+                margin : auto;
+                border: 2px solid lightblue;
+                margin-top: 50px;
+                padding: 0px 10px 0px 10px;
+                background-color: lightgray;
+            }
+            
+            .recette h1
+            {
+                text-align: center;
+                color : darkblue;
+            }
+			            .sous
+            {
+                //display: none;
+                margin-left: 50px;
+            }
+            
+            .categorie
+            {
+                color : blue;
+            }
+            
+            .aliment
+            {
+                color : red;
+            }
+
+            #list-aliment
+            {
+            	display: block;
+            	width: 500px;
+            	float: left;
+            }
+
+            #recette
+            {
+            	display: block;
+            	float: left;
+            	width: 1300px;
+            	border-left: 1px solid blue;
+            }

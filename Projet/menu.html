@@ -1,5 +1,37 @@
-<nav>
-    <a href="recettes.php">Recettes</a>
-    <a href="aliments.php">Aliments</a>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+</head>
+<body>
+
+<div class="header"> 
+<table>
+<tr>
+	<td><div class="titre">Mes boissons favorites</div></td>
+	<td><img src='Builder.jpg' widht="100" height="100">
+
+	<td><div class="barre_recherche">
+		<form action="/search" id="recette_search" onsubmit="ga('send', 'event', 'Search Clicks', 'Header', $j('#searchBox').val());" method="get">
+		<input name="p" value="1" type="hidden">
+            <span id="searchIcon"></span>
+		<input class="textfield" id="searchBox" name="s" title="Search" placeholder="Search" type="text">
+		</form>
+		</div>
+	</td>	
+	<td><div class="liste_recettes">	
+    <a href="recettes.php">Liste des recettes</a>
+	</div></td>
+	<td><div class="liste_aliments">
+    <a href="aliments.php">Liste des aliments</a>
+	</div></td>
+	<td><div class="connexion">
     <a href="connexion.php">Connexion</a>
-</nav>
+	</div></td>
+	</tr>
+	</table>
+</div>
+
+</body>
+</html>	

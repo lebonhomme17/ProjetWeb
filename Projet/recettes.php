@@ -1,42 +1,8 @@
-<!DOCTYPE html>
 <?php
-    include 'Donnees.inc.php';
     
-    $aliment = $_GET['aliment'];
+    
     
 ?>
-
-<html>
-    <head>
-        <title>Liste de toutes les recettes</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style type="text/css">
-            
-            .recette
-            {
-                width: 700px;
-                margin : auto;
-                border: 2px solid lightblue;
-                margin-top: 50px;
-                padding: 0px 10px 0px 10px;
-                background-color: lightgray;
-            }
-            
-            .recette h1
-            {
-                text-align: center;
-                color : darkblue;
-            }
-            
-        </style>
-    </head>
-    <body>
-        
-        <?php
-            include 'menu.html';
-        ?>
-        
         <div>
             
             <?php
@@ -70,6 +36,3 @@
             ?>
             
         </div>
-        
-    </body>
-</html>
