@@ -57,22 +57,20 @@
          <table>
             <tr>
                 <td valign="top">       
-        <div class="list-aliment">
+        <div id="list-aliment">
             <a onclick="afficherSous('Aliment');">Aliments</a>
             <?php
-            
                 list_aliment('Aliment', $Hierarchie);
-            
             ?>
             
         </div>
 </td>
 <td>
-        <div class="recettes">
+        <div id="recettes">
 
             <?php
             if(!empty($aliment)){
-echo 'Liste de recette(s) avec : '.$aliment;
+            echo '<div id="titre_recette">Liste de recette(s) avec : '.$aliment.'</div>';
 }
             include 'recettes.php';
             ?>

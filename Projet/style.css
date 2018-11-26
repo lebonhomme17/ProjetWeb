@@ -23,7 +23,7 @@
 			}
 			.liste_recettes
 			{
-				width : 120px;
+				width : 200px;
 				margin-left : 100px;
 				color : yellow;
 				text-align : center;
@@ -80,16 +80,23 @@
                 color : red;
             }
 
-            .list-aliment
+            #list-aliment
             {
-            	display: block;         	
+            	display: block;     	
             }
 
-            .recettes
+            #recettes
             {
             	display: block;
             	float : left;
-            	width: 1300px;
-            	border-left: 1px solid blue;
+            	width: 1000px;
             	text-align: center;
+            }
+            #titre_recette
+            {
+            	font : 30px bold;
+            }
+            #ajout
+            {
+            	background-color: grey; 
             }

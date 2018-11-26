@@ -28,6 +28,8 @@
             <p>Préparation: <?php echo '<br/>';foreach($prepa as $p){
                 echo $p."".'<br/>';
             };?></p>
+
+            <input type="button" id="ajout" value="Ajouter/Supprimer de la liste" >
             
             </div>
             <?php
