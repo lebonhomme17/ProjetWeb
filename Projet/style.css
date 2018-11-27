@@ -64,9 +64,9 @@
                 text-align: center;
                 color : darkblue;
             }
-			            .sous
+			            
+			.sous
             {
-                //display: none;
                 margin-left: 50px;
             }
             
@@ -83,7 +83,7 @@
             #list-aliment
             {
             	display: block;
-            	width: 500px;
+            	width: 35%;
             	float: left;
             }
 
@@ -91,6 +91,6 @@
             {
             	display: block;
             	float: left;
-            	width: 1300px;
+            	width: 55%;
             	border-left: 1px solid blue;
             }
