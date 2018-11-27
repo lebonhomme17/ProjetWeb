@@ -1,0 +1,135 @@
+﻿
+# table Gamer
+
+insert into Gamer values ('Bolagal',NULL,'bologal@bologal.com','True', 'M', 15, NULL, NULL, NULL);
+insert into Gamer values ('Urgog',NULL,'urgog@urgog.com','False' , 'F', 20, 'Bac' , NULL, NULL);
+insert into Gamer values ('Luznarb',NULL,'luznarb@luznarb.com','False', 'M', 25, 'M', NULL, NULL);
+insert into Gamer values ('Urukgar',NULL,'urukgar@urukgar.com','False', 'F', 30, 'D', NULL, NULL);
+insert into Gamer values ('Tarkhmog',NULL,'tarkhmog@tarkhmog.com','False', 'M', 35, 'D', NULL, NULL);
+insert into Gamer values ('Lurether',NULL,'lurether@lurether.com','True', 'F', 40, 'L', NULL, NULL);
+insert into Gamer values ('iamthebest',NULL,'iamthebest@best.com','True', 'M', 45, 'L', NULL, NULL);
+insert into Gamer values ('welovefrance',NULL,'welove@france.com','True', 'F', 50, 'Bac', NULL, NULL);
+insert into Gamer values ('bigbossdu99',NULL,'bb99@mail.com','True', 'M', 55, 'M', NULL, NULL);
+insert into Gamer values ('catanddog',NULL,'cat@dog.com','True', 'F', 60, 'M', NULL, NULL);
+insert into Gamer values ('Oxdard',NULL,'oxdard@oxdard.com','True', 'M', 65, 'M', NULL, NULL);
+insert into Gamer values ('Saleth',NULL,'saleth@saleth.com','True', 'F', 70, 'D', NULL, NULL);
+insert into Gamer values ('Ghashmog',NULL,'gash@mog.com','False', 'M', 18, 'Bac', NULL, NULL);
+insert into Gamer values ('Balkhagal',NULL,'balkhagal@balkhagal.com','False', 'F', 16, NULL, NULL, NULL);
+insert into Gamer values ('paletran',NULL,'paletran@paletran.com','False', 'M', 14, NULL, NULL, NULL);
+insert into Gamer values ('yazhagal',NULL,'yazhagal@yazhagal.com','False', 'F', 17, NULL, NULL, NULL);
+insert into Gamer values ('Yazhog',NULL,'yazhog@yazhog.com','False', 'M', 21, 'L', NULL, NULL);
+insert into Gamer values ('Patrickkkk',NULL,'patrick@gmail.com','False', 'M', 22, 'L', NULL, NULL);
+
+# table game_session
+
+insert into game_session values ('Bolagal','02-01-2018','The Crew 2','03-01-2018', 1, 7);
+insert into game_session values ('Bolagal','04-01-2018','The Crew 2','06-01-2018', 7, 8);
+insert into game_session values ('Bolagal','15-01-2018','Splatoon 2','18-01-2018', 1, 4);
+insert into game_session values ('Urgog','02-01-2018','Titanfall 2','03-01-2018', 1, 5);
+insert into game_session values ('Luznarb','02-01-2018','Light Fall','08-01-2018', 1, 5);
+insert into game_session values ('Luznarb','02-02-2018','Moonlighter','23-03-2018', 1, 6);
+insert into game_session values ('Urukgar','02-01-2018','Lego Marvel Super Heroes 2','03-01-2018', 1, 1);
+insert into game_session values ('Tarkhmog','02-01-2018','Battlefield 1: In the Name of the Tsar','02-02-2018', 1, 1);
+insert into game_session values ('Lurether','25-01-2018','ARMS','29-01-2018', 1, 3);
+insert into game_session values ('Lurether','08-04-2018','Destiny 2','25-05-2018', 1, 6);
+insert into game_session values ('bigbossdu99','02-01-2018','Dragon Ball Fighters','03-01-2018', 1, 1);
+insert into game_session values ('bigbossdu99','04-01-2018','Extinction','05-01-2018', 1, 1);
+insert into game_session values ('bigbossdu99','06-01-2018','Asura','07-01-2018', 1, 1);
+insert into game_session values ('Saleth','02-01-2018','South Park: The Fractured but Whole','12-01-2018', 1, 2);
+insert into game_session values ('Ghashmog','02-01-2018','Super Mario Odyssey','03-01-2018', 1, 5);
+insert into game_session values ('Ghashmog','04-01-2018','The King','05-01-2018', 1, 4);
+insert into game_session values ('Ghashmog','02-02-2018','Yakuza Kiwami','03-02-2018', 1, 7);
+insert into game_session values ('Yazhog','02-01-2018','The Swords of Ditto','03-05-2018', 1, 1);
+insert into game_session values ('Patrickkkk','02-01-2018','The Surge','03-01-2018', 1, 2);
+insert into game_session values ('Patrickkkk','02-02-2018','The Escapists 2','03-02-2018', 1, 2);
+insert into game_session values ('Patrickkkk','02-03-2018','BATTLETECH','03-03-2018', 1, 2);
+
+# table trick
+
+insert into Trick values (1, 'The Crew 2',2, 'Bolagal');
+insert into Trick values (2, 'The Crew 2',2, 'Bolagal');
+insert into Trick values (3, 'The Crew 2',2, 'Bolagal');
+insert into Trick values (4, 'Titanfall 2',2, 'Urgog');
+insert into Trick values (5, 'Moonlighter',2, 'Luznarb');
+insert into Trick values (6, 'Moonlighter',2, 'Luznarb');
+insert into Trick values (7, 'South Park: The Fractured but Whole',1, 'Saleth');
+insert into Trick values (8, 'The King',2, 'Ghashmog');
+insert into Trick values (9, 'Super Mario Odyssey',1, 'Ghashmog');
+insert into Trick values (10, 'BATTLETECH',1, 'Patrickkkk');
+insert into Trick values (11, 'BATTLETECH',1, 'Patrickkkk');
+insert into Trick values (12, 'BATTLETECH',1, 'Patrickkkk' );
+
+# table free_trick
+
+insert into free_trick values (1, 'Voici les informations pour démarrer le niveau : ...');
+insert into free_trick values (2, 'Voici les informations pour démarrer le niveau : ...' );
+insert into free_trick values (3, 'Voici les informations pour démarrer le niveau : ...' );
+insert into free_trick values (5, 'Voici les informations pour démarrer le niveau : ...' );
+insert into free_trick values (6, 'Voici les informations pour démarrer le niveau : ...' );
+insert into free_trick values (7, 'Voici les informations pour démarrer le niveau : ...' );
+insert into free_trick values (8, 'Voici les informations pour démarrer le niveau : ...' );
+insert into free_trick values (9, 'Voici les informations pour démarrer le niveau : ...' );
+
+# table not_free
+
+insert into not_free values (4, 'exchange');
+insert into not_free values (10, 'money');
+insert into not_free values (11, 'money');
+insert into not_free values (12, 'money');
+
+# table acquisition
+
+insert into Acquisition values ('Bolagal','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Urgog','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Luznarb','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Urukgar,'Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Tarkhmog','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Lurether','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('iamthebest','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('welovefrance','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('bigbossdu99','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('catanddog','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Oxdard','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Saleth','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Ghashmog','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Balkhagal','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('paletran','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('yazhagal','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Yazhog','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Patrickkkk','Super Mario Odyssey', '01-01-2018');
+insert into Acquisition values ('Patrickkkk','BATTLETECH', '01-01-2018');
+insert into Acquisition values ('Bolagal','The Crew 2', '01-01-2018');
+insert into Acquisition values ('Bolagal','Splatoon 2', '01-01-2018');
+insert into Acquisition values ('Urgog','Titanfall 2', '01-01-2018');
+insert into Acquisition values ('Luznarb','Light Fall', '01-01-2018');
+insert into Acquisition values ('Luznarb','Moonlighter', '01-01-2018');
+insert into Acquisition values ('Urukgar','Lego Marvel Super Heroes 2', '01-01-2018');
+insert into Acquisition values ('Tarkhmog','Battlefield 1: In the Name of the Tsar', '01-01-2018');
+insert into Acquisition values ('Lurether','ARMS', '01-01-2018');
+insert into Acquisition values ('Lurether','Destiny 2', '01-01-2018');
+insert into Acquisition values ('bigbossdu99','Dragon Ball Fighters', '01-01-2018');
+insert into Acquisition values ('bigbossdu99','Extinction', '01-01-2018');
+insert into Acquisition values ('bigbossdu99','Asura', '01-01-2018');
+insert into Acquisition values ('Saleth','South Park : The Fractured but Whole', '01-01-2018');
+insert into Acquisition values ('Ghashmog','Yakuza Kiwami', '01-01-2018');
+insert into Acquisition values ('Ghashmog','The King', '01-01-2018');
+insert into Acquisition values ('Yazhog','The Swords of Ditto', '01-01-2018');
+insert into Acquisition values ('Patrickkkk','The Surge', '01-01-2018');
+insert into Acquisition values ('Patrickkkk','The Escarpists 2', '01-01-2018');
+
+# table Votes
+
+insert into Votes values(1, 'welovefrance');
+insert into Votes values(2, 'welovefrance');
+insert into Votes values(3, 'welovefrance');
+insert into Votes values(5, 'welovefrance');
+insert into Votes values(6, 'welovefrance');
+insert into Votes values(7, 'welovefrance');
+insert into Votes values(8, 'welovefrance');
+insert into Votes values(9, 'welovefrance');
+insert into Votes values(9, 'Urgog');
+insert into Votes values(9, 'Patrickkkk');
+insert into Votes values(9, 'Lurether');
+insert into Votes values(9, 'catanddog');
+insert into Votes values(9, 'Urukgar');
+insert into Votes values(9, 'Yazhog');
