@@ -1,6 +1,6 @@
 			body
 			{
-			background-color : #F8F884;
+			background-color : #AAFFAA;
 			}
             .header
             {
@@ -23,11 +23,11 @@
 			}
 			.liste_recettes
 			{
-				width : 200px;
+				width : 120px;
 				margin-left : 100px;
 				color : yellow;
 				text-align : center;
-				background-color : #F8F884;
+
 			}
 			.liste_aliments
 			{
@@ -35,15 +35,15 @@
 				margin-left : 100px;
 				color : yellow;
 				text-align : center;
-				background-color : #F8F884;			
+			
 			}
-			.connexion
+			.barrehaut
 			{
 				width : 75px;
 				margin-left : 100px;
 				color : yellow;
 				text-align : center;
-				background-color : #F8F884;				
+			
 			}
 			.textfield
 			{
@@ -64,9 +64,9 @@
                 text-align: center;
                 color : darkblue;
             }
-			            .sous
+			            
+			.sous
             {
-                //display: none;
                 margin-left: 50px;
             }
             
@@ -82,21 +82,16 @@
 
             #list-aliment
             {
-            	display: block;     	
+            	display: block;
+            	width: 35%;
+            	float: left;
             }
 
-            #recettes
+            #recette
             {
             	display: block;
-            	float : left;
-            	width: 1000px;
-            	text-align: center;
-            }
-            #titre_recette
-            {
-            	font : 30px bold;
-            }
-            #ajout
-            {
-            	background-color: grey; 
+            	float: left;
+            	width: 55%;
+            	border-left: 1px solid blue;
+            	text-align : center;
             }
