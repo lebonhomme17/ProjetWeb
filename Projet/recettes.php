@@ -47,6 +47,9 @@
             <p>Préparation: <?php echo '<br/>';foreach($prepa as $p){
                 echo $p."".'<br/>';
             };?></p>
+
+             <button type="button">Ajouter/Supprimer à mes favoris</button> 
+            
             
             </div>
             <?php
